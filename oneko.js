@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
     if (exploded === "true") {
         let refreshCount = localStorage.getItem("refreshCount");
 
-        
+        /*
         // 5sec reset timer for testing
         setTimeout(function() {
             localStorage.setItem("exploded", "false");
             localStorage.setItem("finalMessage", "false");
             localStorage.setItem("firstMessage", "false");
             location.reload();
-        }, 3000);
-        
+        }, 5000);
+        */
 
         // tombstone fade in only on first visit
         if (firstMessage === "true") { 
