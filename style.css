@@ -53,9 +53,32 @@ h1, p {
     transform: scale(2.2);
 }
 
+#pixelBombContainer:hover {
+    animation: animate 0.4s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg) translate(0px);
+    }
+    25%{
+        transform: rotate(-5deg) translate(-5px);
+    }
+    50%{
+        transform: rotate(0deg) translate(0px);
+    }
+    75%{
+        transform: rotate(5deg) translate(5px);
+    }
+    100%{
+        transform: rotate(0deg) translate(0px);
+    }
+}
+
+
 #bombExplosion {
     z-index: 2;
-    /* offset explosion so it fits on top */
+    /* offset explosion gif so it fits on top */
     transform: scale(1.4) translate(-73px, -100px);
     visibility: hidden;
 }
