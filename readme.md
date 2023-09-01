@@ -1,4 +1,5 @@
 # My precious cat
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4be1ee80-3201-45c6-a748-555c85d2fde7/deploy-status)](https://app.netlify.com/sites/clever-crisp-2bafe2/deploys)
 
 
 I put my cat on the internet, what's the worst that could happen?  
