@@ -1,0 +1,96 @@
+/* hide most elements by default so it wont flash on refresh */
+
+@font-face {
+    font-family: nec_apc3;
+    src: url(/media/Web437_NEC_APC3_8x16.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    background-color: black;
+    image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: nec_apc3;
+    text-align: center;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+
+h1, p {
+    color: white;
+}
+
+#happinessAndABomb {
+    visibility: hidden;
+}
+
+#intro {
+    position: absolute;
+    top: 5;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#bomb {
+    position: absolute;
+    bottom: 23%;
+    right: 20%;
+    visibility: hidden;
+}
+
+#pixelBomb, #bombExplosion {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pixelBomb {
+    z-index: 1;
+    transform: scale(2.2);
+}
+
+#bombExplosion {
+    z-index: 2;
+    /* offset explosion so it fits on top */
+    transform: scale(1.4) translate(-73px, -100px);
+    visibility: hidden;
+}
+
+#despair {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:25px;
+    visibility: hidden;
+}
+
+#guilt {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: opacity 3s ease-in-out;
+    opacity: 0;
+}
+
+#tombstone {
+    position: absolute;
+    visibility: hidden;
+    bottom: 21%;
+    right: 18%;
+    transform: scale(2);
+    transition: opacity 3s ease-in-out;
+    opacity: 0;
+}
+
+#evilPersonDetected {
+    visibility: hidden;
+    transition: opacity 3s ease-in-out;
+    opacity: 0;
+}
